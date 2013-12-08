@@ -18,8 +18,8 @@
 	
 	// Check for a URL sent as either a GET (so we can use the script 
 	// as a browser bookmarklet), or POST (what is sent from IFTTT).
-	if ($from_ifttt['description']) {
-		$url = str_replace('\/', '/', $from_ifttt['description']);
+	if ($from_ifttt['categories'][0]) {
+		$url = str_replace('\/', '/', $from_ifttt['categories'][0]);
 		add_to_en($url, $en_email, $en_project, 'post', $salt);
 		
 	} else {
