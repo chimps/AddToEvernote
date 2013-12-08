@@ -17,9 +17,6 @@ To use this script you will need the following:
 
 ##Setting up
 
-###Setup the IFTTT Webhook
-
-First, download and install the [IFTTT Webhook PHP script](https://github.com/captn3m0/ifttt-webhook) to your web hosting and follow the installation instructions to activate on the [Github page](https://github.com/captn3m0/ifttt-webhook).
 
 ###Install the Add to EN script
 
@@ -29,7 +26,11 @@ Next, download the [Emogrifier PHP script](http://www.pelagodesign.com/sidecar/e
 
 ###Setup the IFTTT recipe
 
-If you haven't already done so you need to active your Pocket account in IFTTT. Next, go to the __Create__ menu item to add a new recipe. Choose __Pocket -> Any new item__ and then select __WordPress -> Create a post__. In title put the ``{{Title}}`` tag. The Body field should contain nothing but the {{Url}} tag as this is what is sent along to Readability. In the tag field you need to put the URL of your copy of the Add to EN script along with the salt, e.g. ``http://www.yourdomain.com/foldername/add_to_en.php?salt=helloworld``.
+If you haven't already done so you need to active your Pocket account in IFTTT. 
+
+Then, follow the instructions to enable [IFTTT Webhook](https://github.com/captn3m0/ifttt-webhook) as the WordPress channel in your IFTTT account.
+
+Next, go to the __Create__ menu item to add a new recipe. Choose __Pocket -> Any new item__ and then select __WordPress -> Create a post__. In title put the ``{{Title}}`` tag. The Body field should contain nothing but the {{Url}} tag as this is what is sent along to Readability. In the tag field you need to put the URL of your copy of the Add to EN script along with the salt, e.g. ``http://www.yourdomain.com/foldername/add_to_en.php?salt=helloworld``.
 
 Unless you want random people adding to your Evernote account it's best to make your recipe private.
 
